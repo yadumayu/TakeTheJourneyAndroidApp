@@ -1,0 +1,53 @@
+ # Директории, созданные Android Studio
+
+.idea/gradle.xml
+*.iml
+.idea/
+# Файлы кэша и сборки
+.gradle/
+local.properties
+/.cxx/
+.externalNativeBuild/
+.cxx/
+captures/
+*.apk
+*.ap_
+*.aab
+
+# Файлы сборки Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Логи и отладочная информация
+*.log
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
+
+# Настройки пользователей
+/local.properties
+/gradle.properties
+/.env
+
+# Keystore файлы (если хранишь подпись в проекте)
+*.keystore
+*.jks
+
+# Firebase
+google-services.json
+*.env
+
+# Файлы тестирования
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Файлы зависимости Kotlin и Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Кэш IDE
