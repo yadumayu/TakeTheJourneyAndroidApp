@@ -1,13 +1,18 @@
 package com.example.takethejourney.ui.catalog
 
+import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.example.takethejourney.data.database.BookDatabase
+import com.example.takethejourney.data.model.Book
+import com.example.takethejourney.data.repository.BookRepository
 
-class CatalogViewModel : ViewModel() {
+class CatalogViewModel(private val repository: BookRepository) : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-    val text: LiveData<String> = _text
+    val allBooks: LiveData<List<Book>> = repository.allBooks
+
+
+
 }
