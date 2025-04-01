@@ -1,0 +1,23 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/catalogFragment">
+    <fragment android:id="@+id/catalogFragment"
+        android:name="com.example.takethejourney.ui.catalog.CatalogFragment"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <action
+            android:id="@+id/action_catalogFragment_to_bookDetailFragment"
+            app:destination="@id/bookDetailFragment"
+            />
+    </fragment>
+
+    <fragment
+    android:id="@+id/bookDetailFragment"
+    android:name="com.example.takethejourney.ui.bookDetail.BookDetailFragment">
+    <argument
+        android:name="bookId"
+        app:argType="integer"
+        app:nullable="false" />
+    </fragment>
+</navigation>

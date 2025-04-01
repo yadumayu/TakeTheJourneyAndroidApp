@@ -11,7 +11,17 @@ import com.example.takethejourney.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    fun setBottomNavSelected(itemId: Int) {
+        val bottomNav = findViewById<BottomNavigationView>(R.id.nav_view)
+        bottomNav.selectedItemId = itemId
+    }
+
+
     private lateinit var binding: ActivityMainBinding
+
+    override fun onSupportNavigateUp(): Boolean {
+        return findNavController(R.id.nav_host_fragment_activity_main).navigateUp() || super.onSupportNavigateUp()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
