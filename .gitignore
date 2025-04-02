@@ -16,3 +16,4 @@ local.properties
 secrets.properties
 **/res/layout/fragment_notifications.xml
 /app/src/main/res/layout/fragment_notifications.xml
+/app/src/main/res/drawable/profile_picture.png

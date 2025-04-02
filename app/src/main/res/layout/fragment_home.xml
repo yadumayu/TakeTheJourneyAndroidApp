@@ -11,10 +11,10 @@
         android:layout_width="299dp"
         android:layout_height="108dp"
         android:layout_marginTop="200dp"
-        android:text="Мы крупный макретплейс.\n
-Мы продаем книги, Вы покупаете.\n
-Все просто, как черное и белое.\n
-У нас есть предложение для Вас."
+        android:text="We are the largest marketplace\n
+We are selling books, you're buying\n
+It's simple like black and white.\n
+We have an offer for you."
         android:textAlignment="center"
         android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
         android:fontFamily="@font/roboto"
-        android:text="Мы любим. Мы читаем."
+        android:text="We love. We read."
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
